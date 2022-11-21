@@ -17,4 +17,7 @@ public class Overloading {
     public static void add(int a,double b){
         System.out.println(a + b);
     }
+
+    public void add(double v) {
+    }
 }

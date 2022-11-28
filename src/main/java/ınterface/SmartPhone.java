@@ -30,6 +30,9 @@ public class SmartPhone implements Player,GPS{  //multiple inheritance
         sm.pause();
         sm.stop();
 
+        Player.method1();
+        GPS.method2();
+
     }
 
 

@@ -1,6 +1,6 @@
 package ınterface;
 
-public class SmartPhone implements Player,GPS{
+public class SmartPhone implements Player,GPS{  //multiple inheritance
 
 
     @Override

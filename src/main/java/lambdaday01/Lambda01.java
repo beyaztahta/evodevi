@@ -38,6 +38,10 @@ public class Lambda01 {
     public static void print(int a){
         System.out.print(a+" ");
     }
+    public static void print(String a){
+        System.out.print(a+" ");
+    }
+
 
     public static boolean ciftBul(int a){
        return a%2==0;

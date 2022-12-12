@@ -3,7 +3,6 @@ package datetime;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
-import java.util.Scanner;
 
 public class DateTime01 {
     public static void main(String[] args) {
@@ -14,7 +13,8 @@ public class DateTime01 {
         System.out.println(anlık);
 
         //Anlık zamanı ekrana yazdıran kodu yazdırınız
-        LocalTime time= LocalTime.now();
+
+       LocalTime time= LocalTime.now();
         System.out.println(time);
 
         //Anlık tarihi ve anlık zamanı ekrana yazdıran kodu yazdırınız
@@ -148,7 +148,7 @@ public class DateTime01 {
         //Mevcut saat diliminden ileri geri gitme
         //Mevcut saat diliminizden 2 saat ileriyi yazdirin
 
-        LocalTime mevcutSaatDilimi=LocalTime.now();
+        LocalTime mevcutSaatDilimi= LocalTime.now();
         DateTimeFormatter dtf=DateTimeFormatter.ofPattern("hh:mm a");
         String format=dtf.format(mevcutSaatDilimi.plusHours(2));
         System.out.println(format);

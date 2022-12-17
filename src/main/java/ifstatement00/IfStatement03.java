@@ -23,9 +23,20 @@ public class IfStatement03 {
 //     }else if(operator.equals("/")){
 //         System.out.println(a/b);
 //     }
-     double x=10.2;
-     double y=5;
-     char ch='-';
+        Scanner input=new Scanner(System.in);
+        System.out.println("enter a number");
+        double x=input.nextDouble();
+
+        System.out.println("enter a number");
+        double y= input.nextDouble();
+
+        System.out.println("enter a +,-,*,/");
+        char ch=input.next().charAt(0);
+
+
+//     double x=10.2;
+//     double y=5;
+//     char ch='-';
 
         switch (ch){
             case '+':
@@ -64,8 +75,6 @@ public class IfStatement03 {
         }else if(bmi>30){
             System.out.println("obezite");
         }
-
-
 
     }
 }

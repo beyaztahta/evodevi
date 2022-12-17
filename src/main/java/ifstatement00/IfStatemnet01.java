@@ -61,13 +61,14 @@ public class IfStatemnet01 {
 
         */
       String password="mamisa12";
-      if(password.replaceAll("\\s","").length()>0){
+      if(password.replaceAll("\\S","").length()>0){
           System.out.println("Sifrede bosluk karakteri kullanmayınız");
-      }else if(password.replaceAll("\\s","").length()>=8){
+      }else if(password.replaceAll("\\S","").length()>=8){
           System.out.println("Gecerli sifre");
       }else{
           System.out.println("Gecersiz sifre");
       }
+
       /*  3) Ayın numarasını girdiğinizde ayın adını yazdırmak için gereken kodu yazınız.
         Örnek; 1 için çıktı: "Ocak", 2 için çıktı: "Şubat" vb.
 

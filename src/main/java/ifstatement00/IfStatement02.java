@@ -101,18 +101,5 @@ görünmelidir. Örneğin; "ali3" için kodunuz "Baş harflerinde hata", "Ad vey
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }

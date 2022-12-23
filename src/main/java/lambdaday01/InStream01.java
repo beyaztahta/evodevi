@@ -13,7 +13,7 @@ public class InStream01 {
             System.out.print(i + " ");
         }
         System.out.println();
-        ilkOtuz(30);
+        ilkOtuzToplamı(30);
         System.out.println();
         ilkYuz(100);
         System.out.println();
@@ -24,7 +24,7 @@ public class InStream01 {
         sekizeBolunenSayılar(325, 468);
     }
 
-    public static void ilkOtuz(int a) {
+    public static void ilkOtuzToplamı(int a) {
         IntStream.range(1, a).forEach(Lambda01::print);
 
     }
@@ -34,7 +34,7 @@ public class InStream01 {
         IntStream.rangeClosed(20, a).forEach(Lambda01::print);
     }
 
-    //S3 Istenen iki deger(dahil) arasindaki sayilari toplayalim:20---30
+    //S3:Istenen iki deger(dahil) arasindaki sayilari toplayalim:20---30
 
     public static int topla(int x, int y) {
         return IntStream.rangeClosed(x, y).sum();
@@ -52,9 +52,9 @@ public class InStream01 {
         return (int) IntStream.
                 rangeClosed(a, b).
                 filter(t -> t % 8 == 0).
-                count();//count yerine foreacch kullanırsak  sayıları gormus oluruz.
-
+                count();
     }
+    //count yerine foreacch kullanırsak  sayıları gormus oluruz.
 
     public static void sekizeBolunenSayılar(int a, int b) {
         IntStream.
